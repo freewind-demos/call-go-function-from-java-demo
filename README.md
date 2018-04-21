@@ -12,6 +12,7 @@ Then run `Hello.java` (from IDE)
 
 Notice
 -----
-1. In go file, we must use `// export MyFuncName` to export the functions we want to call from Java
-2. In go file, the package must be `main`, and there is a function `main`
-3. We can use `nm xxx.so` and `grep` to verify if the required function is exported
+1. In go file, we must declared `import "C"`
+2. In go file, we must use `// export MyFuncName` to export the functions we want to call from Java
+3. In go file, the package must be `main`, and there is a function `main`
+4. We can use `nm math.so | grep Multiply` to verify if the required function is exported
