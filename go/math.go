@@ -1,8 +1,9 @@
 package main
 
-// formatter: off
+//// formatter: off
 import "C"
-// formatter: on
+
+//// formatter: on
 
 //export Multiply
 func Multiply(x int64, y int64) int64 {
